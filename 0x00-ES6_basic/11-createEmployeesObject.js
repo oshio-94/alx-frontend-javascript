@@ -1,4 +1,8 @@
 export default function createEmployeesObject(departmentName, employees) {
-  const dict = {departmentName: employees};
-  return dict;
+  const arr = [departmentName, employees];
+  const dict = arr.map(name => { 
+    return {departmentName : employees};
+  })
+  //const dict = {departmentName: employees};
+  //return dict;
 }
