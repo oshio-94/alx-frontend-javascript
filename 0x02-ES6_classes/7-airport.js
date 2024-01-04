@@ -2,7 +2,8 @@ export default class Airport {
   constructor(name, code) {
     if (typeof name !== 'string') {
       throw new TypeError('not a string');
-    } else if (typeof code !== 'string') {
+    }
+    if (typeof code !== 'string') {
       throw new TypeError('not a string');
     }
 
