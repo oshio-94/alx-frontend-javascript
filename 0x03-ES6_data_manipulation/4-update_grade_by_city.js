@@ -2,7 +2,7 @@ export default function updateStudentGradeByCity(getListStudents, city, newGrade
   const list = getListStudents.filter((e) => {
     if (e.location === city) {
       return e;
-    }
+    } return 0;
   });
   for (const x of list) {
     x.grade = 'N/A';
