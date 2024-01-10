@@ -19,7 +19,7 @@ const studentTwo : Student = {
 const studentsList = [studentOne, studentTwo];
 const tbl = document.createElement("table");
 const tblBody = document.createElement("tbody");
-studentsList.forEach((studentlisted){
+studentsList.forEach((studentlisted) => {
     // creates a table row
     const row = document.createElement("tr");
         // Create a <td> element and a text node, make the text
@@ -37,10 +37,10 @@ studentsList.forEach((studentlisted){
     row.appendChild(cell1);
     row.appendChild(cell2);
     tblBody.appendChild(row);
-      // put the <tbody> in the <table>
+      // put the <tbody> in the <table>   
   tbl.appendChild(tblBody);
-  // appends <table> into <body>
+    // appends <table> into <body>
   document.body.appendChild(tbl);
   // sets the border attribute of tbl to '2'
   tbl.setAttribute("border", "2");
-})
+});
